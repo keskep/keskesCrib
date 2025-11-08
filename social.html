@@ -11,9 +11,11 @@
 <body>
   <header>
     <nav class="navbar">
-      <h1 class="logo">Keske's Crib</h1>
+      <h1 class="logo" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Keske's Crib</h1>
       <div class="dropdown">
-        <button class="dropbtn">Menu ▾</button>
+        <button class="dropbtn" aria-label="Open menu">
+          <img src="icons/menu.png" alt="Menu" style="width:24px; height:24px; object-fit:contain; display:block;">
+        </button>
         <div class="dropdown-content">
           <a href="index.html">Home</a>
           <a href="social.html">Social</a>
